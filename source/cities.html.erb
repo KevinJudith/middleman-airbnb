@@ -1,0 +1,22 @@
+<div class="container text-center">
+  <h1>Here are our cities</h1>
+ <!--  <ul class="list-inline">
+    <% %w(berlin london paris rio brussels tokyo).each do |city| %>
+      <li>
+        <h3><%= city.capitalize %></h3>
+        <img src="https://kitt.lewagon.com/placeholder/cities/<%= city %>" class="img-rounded" height=100px>
+      </li>
+    <% end %>
+  </ul> -->
+
+  <div class="row">
+    <% data.cities.each do |city, infos| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: url(https://kitt.lewagon.com/placeholder/cities/<%= city %>);">
+          <h3><%= infos.name.capitalize%></h3>
+          <p><%= infos.rating %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

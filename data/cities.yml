@@ -1,0 +1,19 @@
+
+brussels:
+  name: Le Wagon Berlin
+  rating: 4.5
+paris:
+  name: Le Wagon Paris
+  rating: 4.7
+london:
+  name: Le Wagon london
+  rating: 4.8
+berlin:
+  name: Le Wagon Berlin
+  rating: 4.8
+tokyo:
+  name: Le Wagon tokyo
+  rating: 4.6
+
+
+

@@ -1,8 +1,7 @@
 ---
 title: Le Wagon - Middleman
 ---
-
-<div id="home">
+<!-- <div id="home">
   <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
     <p>
@@ -11,5 +10,35 @@ title: Le Wagon - Middleman
     <p class="about">
       <%= link_to "More about this template", "about.html" %>
     </p>
+  </div>
+</div> -->
+<!-- <div class="container text-center">
+   <% string_time = Date.today.strftime("%A, %b %d") %>
+  <h1>
+    Today we are <%= string_time%>
+  </h1>
+  <ul class="list-unstyled">
+    <% %w(ERB Middleman Local Foody).each do |name| %>
+      <li>
+        We are playing with <%= name %>
+      </li>
+      <% end %>
+  </ul>
+  <a href="" class="btn btn-primary"> Hello!!</a>
+</div> -->
+
+<div class="container text-center">
+  <div class="banner" style="background-image: url(https://kitt.lewagon.com/placeholder/cities/berlin);">
+    <h3>Le Wagon @Berlin</h3>
+  </div>
+  <div class="row">
+    <% data.cities.each do |city, infos| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: url(https://kitt.lewagon.com/placeholder/cities/<%= city %>);">
+          <h3><%= infos.name.capitalize%></h3>
+          <p><%= infos.rating %></p>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
